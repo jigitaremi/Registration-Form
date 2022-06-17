@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);    
+}
+.headline-cont{
+    padding: 5em;
+    margin-left: 3px;
+   
+}
+
+.headline{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 55px;
+}
+
+.sub-headline{
+    padding-top: 1em;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin-right: 55%;
+}
+
+
+.right-col{
+    width: 27%;
+    margin-left: -47%;
+}
+.accent{
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px 40px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 25px 0;
+    font-weight: 600;
+    width: 95%;
+    box-shadow: 0px 10px 0px -2px rgba(0, 0, 0, 0.152);
+}
+
+.form-cont{
+    background-color: white;
+    padding: 2em;
+    margin: 15px 0;
+    border-radius: 7px;
+    width: 100%;
+    box-shadow: 0px 10px 0px -2px rgba(0, 0, 0, 0.152);
+    
+}
+
+input{
+    padding: 15px;
+    margin: 8px auto;
+    border-radius: 8px;
+    border: solid 1px rgb(138, 137, 137);
+    width: 90%;
+}
+
+.fname[data-error].input {
+    border-color: red;
+    color: red;
+    
+}
+
+.btn{
+    width: 99%;
+    margin: auto
+}
+
+button{
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: inset 0px 0px 5px 0px hsl(154, 73%, 26%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsla(154, 68%, 55%, 0.759);
+    box-shadow: inset 0px 0px 5px 0px hsla(154, 69%, 49%, 0.897);
+}
+
+.terms, .red{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.red{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 375px)  {
+    main{
+        background-image: url(bg-intro-mobile.png);
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .headline-cont{
+        padding: 5px 3px;
+        margin: 10px 2px;
+    }
+    .headline{
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .sub-headline{
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 20px;
+        font-size: 15px;
+        margin: auto;
+    }
+    
+    .right-col{
+        margin-left: -55%;
+    }
+    .accent{
+        padding: 20px 50px;
+        text-align: center;
+        margin: auto;
+        width: 200%;
+        font-weight: 200;
+
+    }
+
+    .form-cont{
+        width: 250%;
+        margin: 25px 0;
+    }
+
+}
+
