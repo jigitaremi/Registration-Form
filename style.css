@@ -119,7 +119,7 @@ button:hover{
     
 }
 
-.input-field[data-error]:after {
+.input-field[data-error]::after {
     content: attr(data-error);
     color: red;
     font-size: 0.85em;
