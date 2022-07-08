@@ -73,12 +73,6 @@ input{
     width: 90%;
 }
 
-.fname[data-error].input {
-    border-color: red;
-    color: red;
-    
-}
-
 .btn{
     width: 99%;
     margin: auto
@@ -117,14 +111,25 @@ button:hover{
     font-weight: 700;
 }
 
-
-.right-col:active{
-    width: 50%;
-}
-input:invalid{
+.input-field[data-error] input{
     border-color: red;
-    text-align: right;
+    background-image: url(/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 28em;
     
+}
+
+.input-field[data-error]:after {
+    content: attr(data-error);
+    color: red;
+    font-size: 0.85em;
+    display: block;
+    margin-left: 58%;
+    font-style: italic;
+}
+
+.input-field[data-error] input::placeholder{
+    color: transparent;
 }
 
 
